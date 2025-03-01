@@ -1,0 +1,196 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:40px;
+    padding: 25px;
+    
+}
+/* CARD */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(71, 71, 71, 0.521);
+    padding: 40px;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    width: 300px;
+    height: fit-content;
+    position:relative;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+.card img{
+    border-radius: 15px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.nombre{
+    color: black;
+    font: bold 250% cursive;
+}
+
+.x{
+    border: rgba(128, 128, 128, 0) solid 1px ;
+    background-color: rgba(95, 95, 95, 0);
+    color: rgb(255, 255, 255);
+    text-align: end;
+    font:bold 17px arial;
+    margin-left: 270px;
+}
+.x:hover{
+    color:rgb(255, 0, 255);
+    cursor:pointer;
+}
+
+.def{
+    background-color: rgba(67, 67, 67, 0.652);
+    border-radius: 15px;
+    padding: 10px;
+    color: white; 
+    text-decoration: none;
+    font:150% cursive;
+
+}
+
+/* NAVBAR */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    padding: 0 40px;
+
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    color: white;
+    border-radius: 10px;
+
+    position: sticky;
+    top: 10px; /* Deja espacio en la parte superior */
+    z-index: 999;
+
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Efecto vidrio esmerilado */
+}
+
+/* Efecto hover */
+.nav:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.02);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
+
+
+.home{
+    color:rgb(253, 122, 255);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.home:hover{
+    color:rgb(255, 255, 255);
+    cursor:pointer;
+}
+
+.about{
+    color: rgb(253, 122, 255);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.about:hover{
+    color: rgb(255, 255, 255);
+    cursor:pointer;
+}
+
+.nav input{
+    margin-right: 5px;
+}
+
+.nav button{
+    background-color: rgb(255, 56, 189);
+    color: rgb(255, 255, 255);
+}
+
+.nav button:hover{
+    height: 25px;
+    width: 70px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 77, 234);
+}
+/* Caja de login */
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    width: 400px;
+    height: 450px;
+    
+    background-color: rgba(253, 107, 255, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    z-index: 1; /* Asegura que el login esté sobre la capa borrosa */
+    backdrop-filter: blur(5px); /* Difumina también el fondo de la caja */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto hover */
+.login:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.pagination button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pagination button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
