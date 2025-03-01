@@ -5,7 +5,7 @@ import style from "./Styles.module.css"
 export default function Nav(props){
     return(
         <div className={style.nav}>
-            <Link className={style.home} to={"/home"}>
+            <Link className={style.home} to={"/"}>
                 <span>Home</span>
             </Link>
 
